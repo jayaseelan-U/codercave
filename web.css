@@ -1,0 +1,111 @@
+.rotate-text
+{
+    display:inline-block;
+    position: relative;
+    background-color:olive;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top:3%;
+}
+
+.rotate-text span{
+    display:block;
+    position:absolute;
+    animation: rotate 3s linear infinite;
+    margin-top: 20%;
+}
+
+@keyframes rotate{
+   0%{
+    transform: rotateY(0deg);
+   }
+   100%{
+    transform:rotateY(360deg);
+   }
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size:25px;
+    color:black;
+    text-decoration:none;
+    font-weight:600;
+    margin-left: 20%;
+}
+
+nav a{
+    font-size: 20px;
+    color:black;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 35px;
+    transition: .1  s;
+}
+
+nav a:hover, nav a.active{
+    color:aqua;
+}
+
+.one{
+    margin-left: 60px;
+    padding-top:15% ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.two{
+    padding-top:10%;
+    padding-left:25%;
+    
+}
+    
+section{
+    min-height: 100vh;
+    background-color: white;
+    font-size: 100px;
+    color:aqua;
+    font-weight: 700;
+    width:1450px;
+    margin-left:2% ;
+    margin-top: 2%;
+}
+img {
+
+}
+
+input{
+    width:150px;
+    height:30px;
+    border-radius: 6px 6px;
+    border-color: aqua;
+}
+select{
+    width:150px;
+    height:30px;
+    border-radius: 6px 6px;
+    border-color: aqua;
+}
+textarea{
+    width:150px;
+    height:30px;
+    border-radius: 6px 6px;
+    border-color: aqua;
+}
